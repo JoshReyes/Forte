@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Driver Length"
+        android:text="Array Length"
         android:id="@+id/textView3"
         android:layout_below="@+id/textView2"
         android:layout_alignLeft="@+id/textView2"
@@ -53,30 +53,6 @@
         android:layout_below="@+id/textView3"
         android:layout_alignLeft="@+id/textView3"
         android:layout_alignStart="@+id/textView3" />
-
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New ToggleButton"
-        android:textOn="Feet"
-        android:textOff="Feet"
-        android:layout_marginBottom="-12px"
-        android:id="@+id/toggleButton"
-        android:layout_above="@+id/toggleButton2"
-        android:layout_alignLeft="@+id/toggleButton2"
-        android:layout_alignStart="@+id/toggleButton2" />
-
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New ToggleButton"
-        android:textOn="Meters"
-        android:textOff="Meters"
-        android:id="@+id/toggleButton2"
-        android:layout_marginTop="-12px"
-        android:layout_alignTop="@+id/editText2"
-        android:layout_toRightOf="@+id/editText2"
-        android:layout_toEndOf="@+id/editText2" />
 
     <EditText
         android:layout_width="wrap_content"

@@ -26,8 +26,6 @@ public class SpeedOfSound extends BaseScreen
                 SharedPreferences.Editor editor = sharedpreferences.edit();
                 editor.putFloat( Temperature, temp );
                 editor.commit();
-
-
                 double speed = 331 + (0.6*temp);
                 ed2.setText( Double.toString( speed ) );
             }
