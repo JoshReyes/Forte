@@ -1,22 +1,21 @@
 package com.example.pc2.finalproject;
 
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class SpeedOfSound extends BaseScreen
 {
+    EditText ed;
     EditText ed2;
-    public static final String SpeedOfSound = "speedKey";
 
     @Override
     protected void onCreate( Bundle savedInstanceState )
     {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_speed_of_sound );
+        ed = (EditText) findViewById( R.id.editText );
         ed2 = (EditText) findViewById( R.id.editText2 );
 
         b1.setOnClickListener( new View.OnClickListener()
@@ -27,11 +26,10 @@ public class SpeedOfSound extends BaseScreen
                 SharedPreferences.Editor editor = sharedpreferences.edit();
                 editor.putFloat( Temperature, temp );
                 editor.commit();
-                //Toast.makeText( SpeedOfSound.this, "Thanks", Toast.LENGTH_LONG ).show();
 
 
                 double speed = 331 + (0.6*temp);
-                Toast.makeText( SpeedOfSound.this, String.valueOf( speed ), Toast.LENGTH_LONG ).show();
+                ed2.setText( Double.toString( speed ) );
             }
         });
     }
